@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form class="registerForm" novalidate>
+        <div class="container">
+            <div class="semi-container">
+                <p class="caption">Please sign up</p>
+            </div>
+            <div class="semi-container">
+                <input type="text" pattern="^[A-Z][a-z]{1,19}$" class="decoration" name="userName" id="userName"
+                    placeholder="First name" required>
+                <div class="warning">Please provide a valid First name.</div>
+                <label for="userName">First name</label>
+            </div>
+            <div class="semi-container">
+                <input type="text" pattern="^[A-Z][a-z]{1,19}$" class="decoration" name="userLastName" id="userLastName"
+                    placeholder="Last name" required>
+                <div class="warning">Please provide a valid Last name.</div>
+                <label for="userLastName">Last name</label>
+            </div>
+            <div class="semi-container">
+                <input type="email" pattern="^([\w\$\.-_]+)@([a-z]+)\.([a-z]{2,5})$" class="decoration" name="userEmail"
+                    id="userEmail" placeholder="Email address" required>
+                <div class="warning">Please provide a valid Email address.</div>
+                <label for="userEmail">Email address</label>
+            </div>
+            <div class="semi-container">
+                <input type="password" pattern="^([\w]{8,15})$" class="decoration" name="userPassword" id='userPassword'
+                    placeholder="Password" required>
+                <div class="warning">Please provide a valid Password.</div>
+                <label for="userPassword">Password</label>
+            </div>
+            <div class="semi-container">
+                <input type="submit" class="submitBtn" value="Sign Up">
+            </div>
+            <div class="semi-container">
+                <a href="#" id='first-page-tag-a' class="signInNow">Sign In now</a>
+            </div>
+        </div>
+    </form>
+
+
+    <form id="signInNowForm" novalidate>
+        <div class="container">
+            <div class="semi-container">
+                <p class="caption">Please sign up</p>
+            </div>
+            <div class="semi-container">
+                <input type="email" id="checkemail" pattern="^([\w\$\.-_]+)@([a-z]+)\.([a-z]{2,5})$" class="decoration"
+                    name="checkemail" placeholder="Email address" required>
+                <div></div>
+                <label for="checkemail">Email address</label>
+            </div>
+            <div class="semi-container">
+                <input type="password" id="checkpassword" pattern="^([\w]{8,15})$" class="decoration"
+                    name="checkpassword" placeholder="Password" required>
+                <div class="warning">Incorerrect email or password.</div>
+                <label for="checkpassword">Password</label>
+            </div>
+            <div class="semi-container">
+                <input type="submit" class="signInBtn" value="Sign In">
+            </div>
+            <div class="semi-container">
+                <a href="#" id='second-page-tag-a' class="signInNow">Sign up now</a>
+            </div>
+        </div>
+    </form>
+    <form id="personPage" novalidate>
+        <div class="container">
+            <div class="semi-container">
+                <div class="containerForImage">
+                    <div class="imgForAccount"> </div>
+                </div>
+            </div>
+            <div class="semi-container">
+                <h1 id="personName" style="text-align: center; font-size: 40px;"></h1>
+                <p id="personEmail" class="info-decoration" style="text-align: center;"></p>
+                <p id="personPosition" class="info-decoration" style="text-align: center;"> Designer & Web Developing
+                </p>
+                <hr style="width:30%;text-align:center;">
+            </div>
+            <div class="semi-container">
+                <input type="submit" class="signUpBack" value="Sign Up" style="margin:200px 0 0 0;">
+            </div>
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
